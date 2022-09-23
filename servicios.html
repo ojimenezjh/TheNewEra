@@ -14,7 +14,7 @@
 
 <body class="h-screen">
     <header class="absolute z-50">
-        <iframe name="navbar" src="navbar.html" class="fixed w-full h-screen" frameborder="0"></iframe>
+        <iframe name="navbar" src="navbar.html" class="fixed w-full h-60 md:h-20" frameborder="0"></iframe>
     </header>
     <section class="bg-white">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl pt-20 md:pt-24 lg:px-6">
@@ -26,8 +26,8 @@
                     descuento del 10% por pago trimestral*</p>
 
                 <div class="md:flex w-full mt-10 md:justify-evenly">
-                    <div style="background-image: url(./assets/mirada.jpeg);"
-                        class="p-4 md:mb-0 mb-10 w-full bg-center bg-opacity-50 max-w-sm rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                    <div style="background-image: url(./assets/nutricion_opacidad.png);"
+                        class="p-4 bg-black md:mb-0 mb-10 w-full bg-center bg-opacity-50 max-w-sm rounded-lg border shadow-md sm:p-8">
                         <h5 class="mb-4 text-2xl md:text-4xl font-medium text-white dark:text-gray-400">Nutrición</h5>
                         <div class="flex items-baseline text-white dark:text-white">
                             <span class="text-3xl font-semibold">€</span>
@@ -120,7 +120,7 @@
                                 </svg>
                                 <span class="text-base font-normal leading-tight text-white">Guías integradas</span>
                             </li>
-                            <li class="flex space-x-3 line-through decoration-gray-500">
+                            <li class="flex space-x-3 invisible line-through decoration-gray-500">
                                 <!-- Icon -->
                                 <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-white"
                                     fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +132,7 @@
                                 <span class="text-base font-normal leading-tight text-white">Guías/videos de
                                     ejercicios y movilidad integrados</span>
                             </li>
-                            <li class="flex space-x-3 line-through decoration-gray-500">
+                            <li class="flex space-x-3 invisible line-through decoration-gray-500">
                                 <!-- Icon -->
                                 <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-white"
                                     fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -144,7 +144,7 @@
                                 <span class="text-base font-normal leading-tight text-white">Correcciones técnicas
                                     video</span>
                             </li>
-                            <li class="flex space-x-3 line-through decoration-gray-500">
+                            <li class="flex space-x-3 invisible line-through decoration-gray-500">
                                 <!-- Icon -->
                                 <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-white"
                                     fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -160,8 +160,8 @@
                         <button type="button"
                             class="text-white bg-red-600 hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Contratar</button>
                     </div>
-                    <div style="background-image: url(./assets/preparacion.jpg); background-size: 150%; background-repeat: no-repeat;"
-                        class="p-4 w-full max-w-sm bg-center rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                    <div style="background-image: url(./assets/entreno_opacidad.png); background-size: 150%; background-repeat: no-repeat; background-size: cover;"
+                        class="p-4 w-full bg-gray-600 max-w-sm bg-center rounded-lg border shadow-md sm:p-8">
                         <h5 class="mb-4 text-2xl md:text-4xl font-medium text-white dark:text-gray-400">Premium</h5>
                         <div class="flex items-baseline text-white">
                             <span class="text-3xl font-semibold">€</span>
@@ -314,17 +314,14 @@
                                 fill="currentColor"></path>
                         </svg>
                         <blockquote>
-                            <p class="text-medium md:text-medium md:text-2xl italic font-medium text-gray-900 dark:text-white">"Lorem ipsum dolor sit,
-                                amet consectetur adipisicing elit. Eligendi vero deserunt, maxime corrupti rerum optio
-                                iusto similique ipsam tempora! Placeat itaque perferendis sapiente repellendus
-                                repudiandae dolor recusandae enim, maiores voluptate!"</p>
+                            <p class="text-medium md:text-medium md:text-2xl italic font-medium text-gray-900 dark:text-white">"La mejora tècnica a sido continua y así se a visto reflejada en los resultados, pero con lo que de verdad me quedo es con la evolución en la madurez mental que he logrado al lado suyo. Orgullosa y feliz de los resultados, del trabajo y de tener a Marc como entrenador."</p>
                         </blockquote>
                         <div class="flex justify-center items-center mt-6 space-x-3">
                             <img class="w-20 h-20 rounded-full"
-                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                                src="/assets/FOTOS ATLETAS + FEEBDACK/ALICIA ZAMBRANO.jpg"
                                 alt="profile picture">
                             <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                <cite class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</cite>
+                                <cite class="pr-3 font-medium text-gray-900 dark:text-white">Alicia Zambrano</cite>
 
                             </div>
                         </div>
@@ -341,17 +338,15 @@
                                 fill="currentColor"></path>
                         </svg>
                         <blockquote>
-                            <p class="text-medium md:text-medium md:text-2xl italic font-medium text-gray-900 dark:text-white">"Lorem ipsum dolor sit,
-                                amet consectetur adipisicing elit. Eligendi vero deserunt, maxime corrupti rerum optio
-                                iusto similique ipsam tempora! Placeat itaque perferendis sapiente repellendus
-                                repudiandae dolor recusandae enim, maiores voluptate!"</p>
+                            <p class="text-medium md:text-medium md:text-2xl italic font-medium text-gray-900 dark:text-white">"Llevo más de un año trabajando con Marc Ribera. Sin duda la mejor decisión que he podido tomar hasta el momento. 
+                                No sólo por la mera mejora de kilos y total, sino también por su manera de transmitir sus conociemientos al atleta de forma personalizada, dando ejemplos prácticos, explicaciones y enseñando el por qué de las cosas."</p>
                         </blockquote>
                         <figcaption class="flex justify-center items-center mt-6 space-x-3">
                             <img class="w-20 h-20 rounded-full"
-                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                                src="/assets/FOTOS ATLETAS + FEEBDACK/DANIEL TORDABLE.jpg"
                                 alt="profile picture">
                             <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                <cite class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</cite>
+                                <cite class="pr-3 font-medium text-gray-900 dark:text-white">Daniel Tordable</cite>
 
                             </div>
                         </figcaption>
@@ -368,17 +363,14 @@
                                 fill="currentColor"></path>
                         </svg>
                         <blockquote>
-                            <p class="text-medium md:text-medium md:text-2xl italic font-medium text-gray-900 dark:text-white">"Lorem ipsum dolor sit,
-                                amet consectetur adipisicing elit. Eligendi vero deserunt, maxime corrupti rerum optio
-                                iusto similique ipsam tempora! Placeat itaque perferendis sapiente repellendus
-                                repudiandae dolor recusandae enim, maiores voluptate!"</p>
+                            <p class="text-medium md:text-medium md:text-2xl italic font-medium text-gray-900 dark:text-white">"Parece mentira pero hace ya 6 meses que conocí a Pablo y la verdad no puedo estar mas contento. Desde el primer momento me transmitió mucha confianza, y lo mejor es que puedes ver con satisfacción que realmente progresas. Destacar de él su profesionalidad y que vive con pasión su trabajo. Ha sido la mejor decisión que he podido hacer."</p>
                         </blockquote>
                         <figcaption class="flex justify-center items-center mt-6 space-x-3">
                             <img class="w-20 h-20 rounded-full"
-                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                                src="/assets/FOTOS ATLETAS + FEEBDACK/JASON MINIOZA.jpg"
                                 alt="profile picture">
                             <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                <cite class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</cite>
+                                <cite class="pr-3 font-medium text-gray-900 dark:text-white">Jason Minioza</cite>
                             </div>
                         </figcaption>
                     </figure>
@@ -394,17 +386,17 @@
                                 fill="currentColor"></path>
                         </svg>
                         <blockquote>
-                            <p class="text-medium md:text-medium md:text-2xl italic font-medium text-gray-900 dark:text-white">"Lorem ipsum dolor sit,
-                                amet consectetur adipisicing elit. Eligendi vero deserunt, maxime corrupti rerum optio
-                                iusto similique ipsam tempora! Placeat itaque perferendis sapiente repellendus
-                                repudiandae dolor recusandae enim, maiores voluptate!"</p>
+                            <p class="text-medium md:text-medium md:text-2xl italic font-medium text-gray-900 dark:text-white">"Hace poco más de 9 meses empecé a trabajar con Pablo, sin exagerar, creo que ha sido de las mejores decisiones que he tomado en mi vida.
+                                Encontrar a un entrenador que esté por ti y que se vea de corazón que ame su trabajo es muy difícil encontrarlo.
+                                He mejorado mis marcas, mi técnica y lo más importante he vuelto a disfrutar entrenando.
+                                Coach de 10 persona de 11."</p>
                         </blockquote>
                         <figcaption class="flex justify-center items-center mt-6 space-x-3">
                             <img class="w-20 h-20 rounded-full"
-                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                                src="/assets/FOTOS ATLETAS + FEEBDACK/ARES CALVO.jpg"
                                 alt="profile picture">
                             <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                <cite class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</cite>
+                                <cite class="pr-3 font-medium text-gray-900 dark:text-white">Ares Calvo</cite>
 
                             </div>
                         </figcaption>
@@ -421,17 +413,14 @@
                                 fill="currentColor"></path>
                         </svg>
                         <blockquote>
-                            <p class="text-medium md:text-medium md:text-2xl italic font-medium text-gray-900 dark:text-white">"Lorem ipsum dolor sit,
-                                amet consectetur adipisicing elit. Eligendi vero deserunt, maxime corrupti rerum optio
-                                iusto similique ipsam tempora! Placeat itaque perferendis sapiente repellendus
-                                repudiandae dolor recusandae enim, maiores voluptate!"</p>
+                            <p class="text-medium md:text-medium md:text-2xl italic font-medium text-gray-900 dark:text-white">"Decidí empezar con Jowi, mi entrenador actual, porque era consciente de mi potencial, pero no sabía como llevar a cabo los entrenos, técnica, competiciones… Desde que empecé está nueva etapa, cada semana he ido mejorando poco a poco, con las debidas progresiones. Mis pesos fueron subiendo, mi técnica mejoró mucho y también cambié mi mentalidad a la hora de entrenar, algo que ha sido un antes y un después en el entreno. Sin duda, es muy recomendable la ayuda de un profesional como Jowi y el equipo de The New Era Team."</p>
                         </blockquote>
                         <figcaption class="flex justify-center items-center mt-6 space-x-3">
                             <img class="w-20 h-20 rounded-full"
-                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                                src="/assets/FOTOS ATLETAS + FEEBDACK/PATRICK.jpg"
                                 alt="profile picture">
                             <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                <cite class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</cite>
+                                <cite class="pr-3 font-medium text-gray-900 dark:text-white">Patrick Pascual</cite>
 
                             </div>
                         </figcaption>
