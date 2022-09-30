@@ -20,9 +20,9 @@
 
     <section id="contacto" class="bg-white ">
         <div class="py-20 px-4 mx-auto max-w-screen-xl sm:py-24 lg:px-6">
-            <h2 class="mb-4 text-center text-2xl md:text-4xl font-extrabold leading-tight text-gray-900 ">Preguntas frecuentes
+            <h2 class="mb-4 text-center text-5xl md:text-7xl font-extrabold leading-tight text-gray-900 ">Preguntas frecuentes
             </h2>
-            <div class="mb-12 w-full" id="accordion-open" data-accordion="open">
+            <div class="mb-12 w-full" id="accordion-open" data-accordion="open" style="color: black !important;" data-inactive-classes="text-gray-800">
                 <h2 id="accordion-open-heading-1">
                     <button type="button"
                         class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200   hover:bg-gray-100  bg-gray-100  text-gray-900 "
@@ -49,7 +49,7 @@
                 </div>
                 <h2 id="accordion-open-heading-2">
                     <button type="button"
-                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200    hover:bg-gray-100 "
+                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200    hover:bg-gray-100 "
                         data-accordion-target="#accordion-open-body-2" aria-expanded="false"
                         aria-controls="accordion-open-body-2">
                         <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
@@ -74,7 +74,7 @@
                 </div>
                 <h2 id="accordion-open-heading-3">
                     <button type="button"
-                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200    hover:bg-gray-100 "
+                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 border border-gray-200 focus:ring-4 focus:ring-gray-200    hover:bg-gray-100 "
                         data-accordion-target="#accordion-open-body-3" aria-expanded="false"
                         aria-controls="accordion-open-body-3">
                         <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
@@ -99,7 +99,7 @@
                 </div>
                 <h2 id="accordion-open-heading-4">
                     <button type="button"
-                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200    hover:bg-gray-100 "
+                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 border border-gray-200 focus:ring-4 focus:ring-gray-200    hover:bg-gray-100 "
                         data-accordion-target="#accordion-open-body-4" aria-expanded="false"
                         aria-controls="accordion-open-body-4">
                         <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
@@ -166,12 +166,19 @@
             </div>
         </div>
     </section>
-    <footer class="p-4 bg-gray-50 sm:p-6 ">
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center ">© 2022 <a href="#"
+    <footer class="p-4 bg-gray-800 sm:p-6">
+        <div class="sm:flex flex-col sm:items-center sm:justify-center">
+            <div class="flex flex-row space-x-8 mb-5 text-gray-50">
+                <a class="hover:text-red-600" href="index.html">Inicio</a>
+                <a class="hover:text-red-600" href="sobre_nosotros.html">El equipo</a>
+                <a class="hover:text-red-600" href="contacto.html">Contacto</a>
+            </div>
+            <span class="text-sm text-gray-50 sm:text-center">© 2022 <a href="#"
                     class="hover:underline">TheNewEra</a>. Todos los derechos reservados.
             </span>
-           <!--  <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+
+
+            <!-- <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                 <a href="#" class="text-gray-500 hover:text-gray-900 ">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill-rule="evenodd"
@@ -207,6 +214,7 @@
                     </svg>
                 </a>
             </div> -->
+        </div>
         </div>
     </footer>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
