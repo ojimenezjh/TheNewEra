@@ -8,9 +8,9 @@
 </head>
 <body class="h-screen">
     <section>
-        <h2 class="text-center mb-5 md:mb-10 text-2xl md:text-4xl font-bold text-gray-900 ">¿Qué dicen nuestros clientes?
+        <h2 class="text-center mb-5 md:mb-10 text-2xl md:text-5xl font-bold text-gray-900 ">¿QUÉ DICEN NUESTROS CLIENTES?
         </h2>
-        <div id="default-carousel" class="relative mx-auto max-w-screen-md" data-carousel="slide">
+        <div id="default-carousel" class="relative mx-auto max-w-screen-lg" data-carousel="static">
             <!-- Carousel wrapper -->
             <div class="relative h-96 overflow-hidden rounded-lg items-center">
                 <!-- Item 1 -->
@@ -121,7 +121,7 @@
 
                             </div>
                         </figcaption>
-                        <blockquote>
+                        <blockquote class="">
                             <p class="text-sm md:text-medium md:text-2xl italic font-medium text-gray-900 ">"Empecé a trabajar con Dani hace unos meses, y desde antes de empezar ya rompió mis expectativas. Me comentó todas las ideas en detalle para la planificación y acertó en todo, rompiendo cada uno de mis récords pese a ser un atleta que lleva tantos años entrenando. A día de hoy estoy muy satisfecho con todo, técnica, marcas, con todo en general. Aunque estoy seguro de qué esto solo acaba de empezar. Si no tienes claro si elegir esta opción, te la recomiendo, no te vas a arrepentir."</p>
                         </blockquote>
                     </figure>
@@ -144,6 +144,18 @@
                         </blockquote>
                     </figure>
                 </div>
+                <button type="button" class="absolute top-40 md:top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-40 md:top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
             </div>
         </div>
     </section>
