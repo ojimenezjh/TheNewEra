@@ -15,15 +15,60 @@
 
 <body class="h-screen">
 
-    <header class="">
-        <iframe name="navbar" src="navbar.html" class="fixed w-full h-60 md:h-20" frameborder="0"></iframe>
+    <header>
+        <nav class="bg-red-700 border-gray-200 px-4 lg:px-6 py-2.5 w-full">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="#" class="flex items-center">
+                    <img src="./assets/logo-new-era.png" class="mr-3 h-10 sm:h-9" alt="new-era logo" />
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200   "
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Abrir menú</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-last"
+                    id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 text-white font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="index.html" target="_parent"
+                                class="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-400 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-400 lg:p-0  lg:   lg: ">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="sobre_nosotros.html" target="_parent"
+                                class="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-400 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-400 lg:p-0  lg:   lg: ">El equipo</a>
+                        </li>
+                        <li>
+                            <a href="servicios.html" target="_parent"
+                                class="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-400 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-400 lg:p-0  lg:   lg: ">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html" target="_parent"
+                                class="block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-400 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-400 lg:p-0  lg:   lg: ">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <section class="bg-contain bg-[length:750px_500px] sm:bg-[length:1000px_700px] md:bg-[length:1200px_900px] xl:bg-cover bg-black bg-fixed md:h-4/5 h-2/5"
         style="background-image: url(./assets/banner\ new\ era\ 2.png); background-repeat: no-repeat;">
         <div class="text-center w-full h-full flex"
             style="align-items: center; justify-content: center; flex-direction: column;">
-            <img class="w-3/4 md:w-1/2 mt-16 mb-10" src="/assets/SLOGAN_DEFINITIVO.png" alt="it's time to change">
+            <img class="w-3/4 md:w-1/2 mb-10" src="/assets/SLOGAN_DEFINITIVO.png" alt="it's time to change">
             <h2 class="text-xl md:text-4xl w-5/6 md:w-1/2 text-white">Nuestra mision es ayudarte a alcanzar tu nueva mejor versión y sacar tu máximo potencial.</h2>
         </div>
     </section>
@@ -93,7 +138,9 @@
 
     <section id="servicios" class="bg-gray-50">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <h2 class="mb-10 text-4xl md:text-7xl text-center font-extrabold text-gray-900 ">NUESTRA FORMA DE TRABAJO</h2>
+            <h2 class="hidden sm:block mb-10 text-4xl md:text-7xl text-center font-extrabold text-gray-900 ">NUESTRA FORMA DE TRABAJO</h2>
+            <h2 class="sm:hidden text-4xl md:text-7xl text-center font-extrabold text-gray-900 ">NUESTRA FORMA</h2>
+            <h2 class="sm:hidden mb-10 text-4xl md:text-7xl text-center font-extrabold text-gray-900 ">DE TRABAJO</h2>
             <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
                 <div class="flex flex-col items-center text-center p-4 border-2 border-red-700 shadow-md shadow-red-400/50">
                     <div
@@ -143,7 +190,7 @@
                         </svg>
                     </div>
                     <h3 class="mb-2 text-xl font-bold ">Correcciones técnicas y feedback</h3>
-                    <p class="text-gray-500 ">La técnica de los ejercicios es inidividual, y por tanto
+                    <p class="text-gray-500 ">La técnica de los ejercicios es individual, y por tanto
                         diferente para todos, ya que no todos tenemos las mismas características. Para ello, grabarse va
                         a ser fundamental para poder correguir aspectos técnicos que van a ir juntamente con el feedback
                         diario/semanal.
@@ -162,7 +209,7 @@
                     <div class="md:flex w-full mt-10 md:justify-evenly">
                         <div style="background-image: url(./assets/FONDO_COACHING.png); background-size: 150%; background-repeat: no-repeat; background-size: cover;"
                             class="p-4 w-full bg-gray-600 max-w-sm bg-center flex flex-col rounded-lg border shadow-md sm:p-8">
-                            <h2 class="mb-4 text-5xl text-center font-medium text-white sm:mt-0 mt-4">COACHING ONLINE</h2>
+                            <h2 class="mb-4 text-4xl text-center font-medium text-white sm:mt-0 mt-4">COACHING ONLINE</h2>
                             <!-- List -->
                             <ul role="list" class="my-7 space-y-5">
                                 <li class="flex space-x-3">
@@ -251,7 +298,7 @@
                                 class="text-white bg-red-600 mt-auto hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-200  font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Contratar</button>
                         </div>
                         <div style="background-image: url(./assets/FONDO_NUTRI.png); background-size: 150%; background-repeat: no-repeat; background-size: cover;" class="p-4 mt-5 sm:mt-0 flex flex-col bg-black md:mb-0 mb-10 w-full bg-center bg-opacity-50 max-w-sm rounded-lg border shadow-md sm:p-8">
-                            <h2 class="mb-4 text-5xl font-medium text-center text-white sm:mt-0 mt-4">NUTRICIÓN</h2>
+                            <h2 class="mb-4 text-4xl font-medium text-center text-white sm:mt-0 mt-4">NUTRICIÓN</h2>
                             
                             <!-- List -->
                             <ul role="list" class="my-7 space-y-5">
@@ -326,8 +373,166 @@
             </div>
         </div>
     </section>
-    <section class="h-[52vh] md:h-4/6 flex justify-center">
-        <iframe src="citas.html" class="w-5/6 md:w-full h-full" frameborder="0"></iframe>
+    <section class="justify-center">
+            <h2 class="text-center mb-5 md:mb-10 text-[7.5vw] md:text-5xl font-bold text-gray-900 ">¿QUÉ DICEN NUESTROS CLIENTES?
+            </h2>
+            <div id="default-carousel" class="relative mx-auto max-w-screen-lg" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-96 overflow-hidden rounded-lg items-center">
+                    <!-- Item 1 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+                        data-carousel-item="">
+                        <div class="mx-auto max-w-screen-md text-center">
+    
+                            <div class="flex justify-center items-center mb-6 space-x-3">
+                                <img class="w-20 h-20 rounded-full object-cover "
+                                    src="/assets/FOTOS ATLETAS + FEEBDACK/ALICIA ZAMBRANO.jpg"
+                                    alt="profile picture">
+                                <div class="flex items-center divide-x-2 divide-gray-500 ">
+                                    <cite class="pr-3 font-medium text-gray-900 ">Alicia Zambrano</cite>
+    
+                                </div>
+                            </div>
+                                <blockquote>
+                                    <p class="text-sm md:text-medium md:text-2xl italic font-medium text-gray-900 ">"Estoy muy orgullosa de tener a Marc como entrenador, mejorando, aprendiendo y disfrutando desde el minuto uno. Empecé a trabajar con Marc por sus conocimientos, porque es alguien que está constantemente formándose y por su manera en la que vive y transmite este deporte. Desde entonces, los resultados han hablado por sí solos, pero con lo que me quedo es con la evolución en la madurez mental que he logrado a su lado."</p>
+                                </blockquote>
+    
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                        data-carousel-item="active">
+                        <figure class="mx-auto max-w-screen-md text-center">
+                            <figcaption class="flex justify-center items-center mb-6 space-x-3">
+                                <img class="w-20 h-20 rounded-full object-cover"
+                                    src="/assets/FOTOS ATLETAS + FEEBDACK/DANIEL TORDABLE.jpg"
+                                    alt="profile picture">
+                                <div class="flex items-center divide-x-2 divide-gray-500 ">
+                                    <cite class="pr-3 font-medium text-gray-900 ">Daniel Tordable</cite>
+                                </div>
+                            </figcaption>
+                            <blockquote>
+                                <p class="text-sm md:text-medium md:text-2xl italic font-medium text-gray-900 ">"Llevo más de un año trabajando con Marc. Sin duda la mejor decisión que he podido tomar hasta el momento. No sólo por la mejora, sino también por su manera de transmitir sus conocimientos. Es todo un profesional que engloba tanto los conocimientos, como el carisma y psicología aplicables al atleta. Es una persona analítica, curiosa, organizada y con mucha personalidad capaz adaptarse a las adversidades. Recomendado se queda corto."</p>
+                            </blockquote>
+                        </figure>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
+                        data-carousel-item="">
+                        <figure class="mx-auto max-w-screen-md text-center">
+                            <!-- <svg aria-hidden="true" class="mx-auto mb-3 w-12 h-12 text-gray-400 "
+                                viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                                    fill="currentColor"></path>
+                            </svg> -->
+                            <figcaption class="flex justify-center items-center mb-6 space-x-3">
+                                <img class="w-20 h-20 rounded-full object-cover"
+                                    src="/assets/FOTOS ATLETAS + FEEBDACK/JASON MINIOZA.jpg"
+                                    alt="profile picture">
+                                <div class="flex items-center divide-x-2 divide-gray-500 ">
+                                    <cite class="pr-3 font-medium text-gray-900 ">Jason Minioza</cite>
+                                </div>
+                            </figcaption>
+                            <blockquote>
+                                <p class="text-sm md:text-medium md:text-2xl italic font-medium text-gray-900 ">"Hace ya 6 meses que conocí a Pablo y no puedo estar más contento. Desde el primer momento me transmitió mucha confianza, y lo mejor es que puedes ver con satisfacción que realmente progresas. Destacar de él su profesionalidad y que vive con pasión su trabajo. Ha sido la mejor decisión que he podido hacer."</p>
+                            </blockquote>
+                        </figure>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform"
+                        data-carousel-item="">
+                        <figure class="mx-auto max-w-screen-md text-center">
+                            <figcaption class="flex justify-center items-center mb-6 space-x-3">
+                                <img class="w-20 h-20 rounded-full object-cover"
+                                    src="/assets/FOTOS ATLETAS + FEEBDACK/ARES CALVO.jpg"
+                                    alt="profile picture">
+                                <div class="flex items-center divide-x-2 divide-gray-500 ">
+                                    <cite class="pr-3 font-medium text-gray-900 ">Sergio Calvo</cite>
+                                </div>
+                            </figcaption>
+                            <blockquote>
+                                <p class="text-sm md:text-medium md:text-2xl italic font-medium text-gray-900 ">"Hace 9 meses empecé a trabajar con Pablo y creo que ha sido de las mejores decisiones que he tomado en mi vida. Encontrar a un entrenador que esté por ti y que ame su trabajo es muy difícil encontrarlo.He mejorado mis marcas, mi técnica y lo más importante, he vuelto a disfrutar entrenando. Coach de 10 persona de 11."</p>
+                            </blockquote>
+                        </figure>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform"
+                        data-carousel-item="">
+                        <figure class="mx-auto max-w-screen-md text-center">
+                            <figcaption class="flex justify-center items-center mb-6 space-x-3">
+                                <img class="w-20 h-20 rounded-full object-cover"
+                                    src="/assets/FOTOS ATLETAS + FEEBDACK/PATRICK.jpg"
+                                    alt="profile picture">
+                                <div class="flex items-center divide-x-2 divide-gray-500 ">
+                                    <cite class="pr-3 font-medium text-gray-900 ">Patrick Pascual</cite>
+    
+                                </div>
+                            </figcaption>
+                            <blockquote>
+                                <p class="text-sm md:text-medium md:text-2xl italic font-medium text-gray-900 ">Decidí empezar con Jowi, porque era consciente de mi potencial, pero no sabía cómo llevar y organizarme los entrenos. Desde que empecé está nueva etapa, cada semana he ido mejorando, mis marcas han subido, mi técnica ha mejorado y mi mentalidad ha cambiado. Sin duda, es muy recomendable la ayuda de un profesional como Jowi."</p>
+                            </blockquote>
+                        </figure>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform"
+                        data-carousel-item="">
+                        <figure class="mx-auto max-w-screen-md text-center">
+                            <figcaption class="flex justify-center items-center mb-6 space-x-3">
+                                <img class="w-20 h-20 rounded-full object-cover"
+                                    src="/assets/FOTOS ATLETAS + FEEBDACK/DANI HIGUERAS.jpg"
+                                    alt="profile picture">
+                                <div class="flex items-center divide-x-2 divide-gray-500 ">
+                                    <cite class="pr-3 font-medium text-gray-900 ">Dani Higueras</cite>
+    
+                                </div>
+                            </figcaption>
+                            <blockquote class="">
+                                <p class="text-sm md:text-medium md:text-2xl italic font-medium text-gray-900 ">"Empecé a trabajar con Dani hace unos meses, y desde antes de empezar ya rompió mis expectativas. Me comentó todas las ideas en detalle para la planificación y acertó en todo, rompiendo cada uno de mis récords pese a ser un atleta que lleva tantos años entrenando. A día de hoy estoy muy satisfecho con todo, técnica, marcas, con todo en general. Aunque estoy seguro de qué esto solo acaba de empezar. Si no tienes claro si elegir esta opción, te la recomiendo, no te vas a arrepentir."</p>
+                            </blockquote>
+                        </figure>
+                    </div>
+                    <!-- Item 7 -->
+                    <div class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform"
+                        data-carousel-item>
+                        <figure class="mx-auto max-w-screen-md text-center">
+                            <figcaption class="flex justify-center items-center mb-6 space-x-3">
+                                <img class="w-20 h-20 rounded-full object-cover"
+                                    src="/assets/FOTOS ATLETAS + FEEBDACK/NEREA.jpg"
+                                    alt="profile picture">
+                                <div class="flex items-center divide-x-2 divide-gray-500 ">
+                                    <cite class="pr-3 font-medium text-gray-900 ">Nerea</cite>
+    
+                                </div>
+                            </figcaption>
+                            <blockquote>
+                                <p class="text-sm md:text-medium md:text-2xl italic font-medium text-gray-900 ">"Desde que empecé a trabajar con Dani he sentido una cercanía, confianza y seguridad que ha sido esencial. Gracias a su conocimiento, capacidad de individualización y adaptación, he sido capaz de mejorar mi técnica y mis resultados. Y juntamente, he podido aprender sobre entrenamiento, salud mental, confianza... Si quieres descubrir de lo que eres capaz, te animo a que tú también des el paso de trabajar junto a Dani."</p>
+                            </blockquote>
+                        </figure>
+                    </div>
+    <!--                 <div class="absolute z-30 top-40 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                        <button type="button" class="w-8 h-8 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="5"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 7" data-carousel-slide-to="6"></button>
+                    </div> -->
+                    <button type="button" class="absolute sm:top-40 md:top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full ring-0 sm:bg-gray-800/30 sm:group-hover:bg-gray-800/60 sm:group-focus:ring-4 sm:group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-6 h-6 text-transparent sm:text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute sm:top-40 md:top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full ring-0 sm:bg-gray-800/30 sm:group-hover:bg-gray-800/60 sm:group-focus:ring-4 sm:group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-6 h-6 text-transparent sm:text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
     </section>
     <footer class="p-4 bg-gray-800 sm:p-6">
         <div class="sm:flex flex-col sm:items-center sm:justify-center">
@@ -335,6 +540,7 @@
                 <a class="hover:text-red-600" href="index.html">Inicio</a>
                 <a class="hover:text-red-600" href="sobre_nosotros.html">El equipo</a>
                 <a class="hover:text-red-600" href="contacto.html">Contacto</a>
+                <a class="hover:text-red-600" href="politica_privacidad.html">Política de privacidad</a>
             </div>
             <span class="text-sm text-gray-50 sm:text-center">© 2022 <a href="#"
                     class="hover:underline">TheNewEra</a>. Todos los derechos reservados.
