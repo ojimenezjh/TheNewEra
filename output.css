@@ -9,6 +9,41 @@
 @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Public Sans&display=swap');
 
+@media only screen and (min-width: 600px) {
+  #banner{
+    background-image: url(./assets/banner\ new\ era\ 2.png); 
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 404px) {
+  #banner{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/banner\ new\ era3.jpg); 
+    background-repeat: no-repeat;
+    background-size: 400px 500px; 
+  }
+
+  #carousel{
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 404px) {
+  #banner{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/banner\ new\ era3.jpg); 
+    background-repeat: no-repeat;
+    background-size: 500px 500px; 
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 500px) {
+  #banner{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/banner\ new\ era3.jpg); 
+    background-repeat: no-repeat;
+    background-size: 600px 500px; 
+  }
+}
+
 * {
   font-family: 'Public Sans';
 }
